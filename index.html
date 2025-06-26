@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar - Professional Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Abhishek Kumar</div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+     
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Abhishek Kumar</h1>
+            <p class="hero-subtitle">Electronics & Communication Engineering Student</p>
+            <p class="hero-description">
+                Passionate about Data Structures, Algorithms, and Frontend Development. 
+                Building innovative solutions with modern technologies.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('projects')">View My Work</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+     
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Learn more about my journey, education, and passion for technology</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-left">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <i class="fas fa-user"></i>
+                            <h3>Personal Profile</h3>
+                        </div>
+                        <p>I'm a dedicated Electronics & Communication Engineering student with a strong passion for 
+                        software development and problem-solving. My journey in technology began with curiosity 
+                        about how systems work, leading me to explore programming languages and data structures.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-header">
+                            <i class="fas fa-award"></i>
+                            <h3>Education</h3>
+                        </div>
+                        <div class="education-item">
+                            <h4>Bachelor of Technology</h4>
+                            <p>Electronics & Communication Engineering</p>
+                            <span class="education-year">2022 - 2026 (Expected)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-right">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>What I Do</h3>
+                        </div>
+                        <ul class="what-i-do-list">
+                            <li><span>•</span> Solve complex algorithmic problems and optimize code efficiency</li>
+                            <li><span>•</span> Develop Frontend web applications with modern technologies</li>
+                            <li><span>•</span> Design and implement database solutions for various applications</li>
+                            <li><span>•</span> Create responsive and user-friendly web interfaces</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="philosophy-card">
+                        <h3>My Philosophy</h3>
+                        <p>"Technology should solve real problems and make life better. I believe in writing 
+                        clean, efficient code and continuously learning new technologies to stay at the 
+                        forefront of innovation."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">My expertise spans across multiple programming languages and technologies</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Data Structures & Algorithms</h3>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>C++</h3>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>SQL</h3>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="95"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-info">
+                            <span>Proficiency</span>
+                            <span>55%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="55"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Problem Solving</h3>
+                    <p>Expert in algorithmic thinking and optimization techniques</p>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Design</h3>
+                    <p>Proficient in designing efficient database schemas and queries</p>
+                </div>
+                <div class="expertise-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and interactive web applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A showcase of my recent work and technical projects</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-Commerce Platform (Amazon Clone)</h3>
+                    <p>Built a responsive Amazon homepage clone using pure HTML and CSS without any JavaScript, Focused on layout structure, styling, navigation bar, Ensured mobile responsiveness and clean UI to closely match the original Amazon look.</p>
+                    
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li><span>✓</span> User Authentication</li>
+                            <li><span>✓</span> Product Management</li>
+                            <li><span>✓</span> Shopping Cart</li>
+                            <li><span>✓</span> Payment Gateway</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <!-- <span>JavaScript</span> -->
+                            <!-- <span>SQL</span> -->
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://abhishek-amazon-clone1.vercel.app/" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                        <a href="https://github.com/Abhishekqq/Amazon-clone1" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>ICCSAT-2025 Conference website</h3>
+                    <p>Developed the official ICCSAT-2025 Conference website for Poornima College of Engineering, providing a professional and informative platform for participants to explore conference details, registration info, keynote speakers, schedules, and paper submission guidelines, Domain is given by PCE.</p>
+                    
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li><span>✓</span> Responsive Design</li>
+                            <li><span>✓</span> Event Details</li>
+                            <li><span>✓</span> Speaker Section</li>
+                            <li><span>✓</span>  Paper Submission</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Vercel</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://iccsat.poornima.org/" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                        <a href="https://github.com/Abhishekqq/ICCSAT-2025-conference" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Health-Care</h3>
+                    <p>Designed a user-friendly Health Care Website that allows users to explore health tips, symptoms, and hospital services. Built with a clean UI and mobile responsiveness using HTML, CSS, and JavaScript. Future scope includes hospital appointment booking and emergency location tracking with backend integration.
+
+</p>
+                    
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li><span>✓</span> Responsive Layout</li>
+                            <li><span>✓</span> Clean Interface</li>
+                            <li><span>✓</span> Symptom Info</li>
+                            <li><span>✓</span> Hospital Finder</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>(Planned) Python + MySQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://health-care-abhishek.vercel.app/" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                        <a href="https://github.com/Abhishekqq/Health_care" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>cinema-hall Website</h3>
+                    <p>Created a dynamic Cinema Hall Website showcasing movie listings, banners, and detailed sections using HTML, CSS, and JavaScript. The UI replicates a real-world movie booking portal with modern visuals and hover effects. Designed to be clean, responsive, and ready for future API integration without affecting layout.</p>
+                    
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li><span>✓</span> Responsive Design</li>
+                            <li><span>✓</span> Smooth Animations</li>
+                            <li><span>✓</span> Movie Cards</li>
+                            <li><span>✓</span> Banner Section</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://cinema-hall-abhishek.vercel.app/" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                        <a href="https://github.com/Abhishekqq/cinema-hall" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- <div class="project-card">
+                    <h3>Algorithm Complexity Analyzer</h3>
+                    <p>Tool for analyzing and comparing time and space complexity of different algorithms, with graphical representations and performance metrics.</p>
+                    
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li><span>✓</span> Complexity Analysis</li>
+                            <li><span>✓</span> Performance Metrics</li>
+                            <li><span>✓</span> Graph Visualization</li>
+                            <li><span>✓</span> Algorithm Comparison</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-tags">
+                            <span>C++</span>
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Database Query Optimizer</h3>
+                    <p>Advanced SQL query optimization tool that suggests improvements and analyzes query performance with detailed execution plans.</p>
+                    
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li><span>✓</span> Query Analysis</li>
+                            <li><span>✓</span> Performance Optimization</li>
+                            <li><span>✓</span> Execution Plans</li>
+                            <li><span>✓</span> Suggestion Engine</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-tech">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-tags">
+                            <span>SQL</span>
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+            
+            <div class="projects-cta">
+                <a href="https://github.com/Abhishekqq?tab=repositories" target="_blank" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+     
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's connect and discuss opportunities, collaborations, or just have a tech chat</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>abhisheksingh66203@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9661179559</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-card">
+                        <h3>Social Links</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/abhishek-singh-a16428219/" class="social-link linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Abhishekqq" class="social-link github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="abhishek_kumar_resume.pdf" class="social-link download">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h3>Send a Message</h3>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Abhishek Kumar. Built with HTML, CSS & JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
